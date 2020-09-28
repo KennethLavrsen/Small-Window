@@ -10,3 +10,9 @@ Control happens through MQTT
 You setup the secrets in secrets.h
 
 Rest of the setup is done in header of the .ino file
+
+MQTT topics
+
+- mqttTopicAnnounce  "smallwindow/announce" Window controller announces itself at boot
+- mqttTopicSet       "smallwindow/set"      Open and close the window by sending "open" and "close" to this topic
+- mqttTopicState     "smallwindow/state"    Window controller reports current position on this topic "open" or "closed"
